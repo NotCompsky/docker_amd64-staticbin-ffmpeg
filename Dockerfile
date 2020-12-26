@@ -1,6 +1,6 @@
 # Mostly copied from notcompsky/static-wangle-ffmpeg
 
-FROM notcompsky/amd64_static-mariadb-ffmpeg:latest AS intermediate
+FROM notcompsky/amd64-static-mariadb-ffmpeg:latest AS intermediate
 RUN cd / \
 	&& git clone --depth 1 https://github.com/FFmpeg/FFmpeg \
 	&& cd /FFmpeg \
